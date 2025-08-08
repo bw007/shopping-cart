@@ -1,0 +1,47 @@
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 200px;
+}
+
+.product-card img {
+  width: 60px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.product-card button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid;
+}
+
+.product-card button:hover {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.product-card button:active {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
