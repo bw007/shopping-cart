@@ -11,4 +11,8 @@ import { Component, Input } from '@angular/core';
 })
 export class ProductListComponent {
   @Input({ required: true }) products!: Product[];
+
+  addToCart(productId: string) {
+    console.log(productId);
+  }
 }

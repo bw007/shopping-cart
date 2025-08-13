@@ -1,6 +1,31 @@
 .header {
   display: flex;
-  gap: 1rem;
-  padding: 1rem;
+  gap: 1.5rem;
+  padding: 1.5rem;
   background-color: #f0f0f0;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: inherit;
+}
+
+.cart {
+  position: relative;
+}
+
+.badge {
+  display: inline-flex !important;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff5252;
+  border-radius: 12px;
 }

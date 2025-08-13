@@ -1,0 +1,22 @@
+<div (click)="onCancel()" class="overlay"></div>
+<dialog open>
+  <form (ngSubmit)="onSubmit()">
+    <h2>Add New Product</h2>
+    <div>
+      <label for="name">Name:</label>
+      <input id="name" name="name" type="text" required [(ngModel)]="name" />
+    </div>
+    <div>
+      <label for="price">Price:</label>
+      <input id="price" name="price" type="number" required [(ngModel)]="price" />
+    </div>
+    <div>
+      <label for="image">Image URL:</label>
+      <input id="image" name="image" type="text" required [(ngModel)]="image" />
+    </div>
+    <div class="actions">
+      <button type="submit">Add Product</button>
+      <button (click)="onCancel()" type="button">Cancel</button>
+    </div>
+  </form>
+</dialog>

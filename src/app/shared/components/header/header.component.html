@@ -1,5 +1,8 @@
 <div class="header">
   <a routerLink="/">Home</a>
   <a routerLink="/products">Products</a>
-  <a routerLink="/cart">Cart</a>
+  <a routerLink="/cart" class="cart">
+    <span>Cart</span>
+    <span *ngIf="getAllCartDataCount" class="badge">{{ getAllCartDataCount }}</span>
+  </a>
 </div>

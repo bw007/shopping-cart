@@ -1,0 +1,10 @@
+.products-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.products-head button {
+  padding: 5px;
+  cursor: pointer;
+}

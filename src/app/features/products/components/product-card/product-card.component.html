@@ -1,6 +1,13 @@
 <div class="product-card">
-  <img [src]="'/image.png'" [alt]="product.name" />
+  <img [src]="imagePath" [alt]="product.name" />
   <h3>{{ product.name }}</h3>
   <p>{{ product.price }}</p>
-  <button>Add to cart</button>
+  <div *ngIf="!isInCart">
+    <button (click)="addToCart()">Add to cart</button>
+  </div>
+  <div *ngIf="isInCart">
+    <a routerLink="/cart">
+      <button style="background-color: gray;">Go to cart</button>
+    </a>
+  </div>
 </div>
