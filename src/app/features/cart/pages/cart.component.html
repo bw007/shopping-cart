@@ -1,4 +1,4 @@
-<h1>Carsst</h1>
+<h1>Cart</h1>
 <div *ngIf="cartItems?.length; else emptyCart">
   <table>
     <thead>
@@ -14,7 +14,7 @@
       <tr *ngFor="let item of cartItems">
         <td>{{ item.name }}</td>
         <td>
-          <button (click)="decreaseQuantity(item.id)">-</button>
+          <button [disabled]="item.quantity === 1" (click)="decreaseQuantity(item.id)">-</button>
           {{ item.quantity }}
           <button (click)="increaseQuantity(item.id)">+</button>
         </td>

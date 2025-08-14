@@ -16,9 +16,13 @@ export class CartComponent {
     return this.cartService.getAllCartData()
   }
 
-  decreaseQuantity(productId: string) {}
+  decreaseQuantity(productId: string) {
+    this.cartService.decreaseQuantity(productId)
+  }
 
-  increaseQuantity(productId: string) {}
+  increaseQuantity(productId: string) {
+    this.cartService.increaseQuantity(productId)
+  }
 
   removeFromCart(productId: string) {
     this.cartService.removeCartData(productId)
